@@ -5,9 +5,10 @@ public class colorList {
     public int Color;
     public int textcolor;
 
-    public colorList(int textcolor,String colorName, int color) {
+    public colorList(int text,String colorName, int color) {
         ColorName = colorName;
         Color = color;
+        textcolor=text;
     }
 
     public String getColorName() {

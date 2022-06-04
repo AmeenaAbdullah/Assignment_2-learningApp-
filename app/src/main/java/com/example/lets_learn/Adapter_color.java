@@ -25,12 +25,12 @@ public class Adapter_color extends ArrayAdapter<colorList>{
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         colorList s= getItem(position);
         convertView = LayoutInflater.from(getContext()).inflate(R.layout.activity_cutomized_color_list ,parent, false);
-        ImageView i=convertView.findViewById(R.id.colorimg);
         TextView t=convertView.findViewById(R.id.ColorName);
         t.setTextColor(s.textcolor);
-        i.setBackgroundColor(s.Color);
+        convertView.setBackgroundColor(s.Color);
         t.setText(s.ColorName);
         return convertView;
+
     }
 }
 

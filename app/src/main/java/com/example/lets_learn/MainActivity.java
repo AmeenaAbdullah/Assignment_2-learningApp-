@@ -47,8 +47,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button q=findViewById(R.id. quiz);
-       q.setOnClickListener(new View.OnClickListener() {
+        Button quiz=findViewById(R.id. quiz);
+       quiz.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this,numbers.class));

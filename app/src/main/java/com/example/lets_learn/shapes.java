@@ -44,7 +44,7 @@ public class shapes extends AppCompatActivity {
                 else if(i==4)
                     t.setText("Hexagon");
                 else if(i==5)
-                    t.setText("WHITE");
+                    t.setText("Star");
             }
         });
 

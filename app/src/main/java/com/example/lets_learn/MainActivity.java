@@ -38,6 +38,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this,shapes.class));
             }
         });
+
+        Button number=findViewById(R.id.number);
+        number.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this,numbers.class));
+            }
+        });
     }
 }
 

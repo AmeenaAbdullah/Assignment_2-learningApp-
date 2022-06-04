@@ -57,7 +57,7 @@ public class numbers extends AppCompatActivity {
                 else if(i==4)
                     t.setText("5");
                 else if(i==5)
-                    t.setText("Star");
+                    t.setText("6");
                 else if(i==6)
                     t.setText("Square");
                 else if(i==7)

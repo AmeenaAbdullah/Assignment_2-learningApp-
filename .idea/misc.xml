@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Ameena/Documents/semester6/MC/Sessional/Lets_learn/app/src/main/res/drawable-v24/alphabet_detail.xml" value="0.156" />
+        <entry key="..\:/Users/Ameena/Documents/semester6/MC/Sessional/Lets_learn/app/src/main/res/drawable-v24/alphabet_item.xml" value="0.156" />
+        <entry key="..\:/Users/Ameena/Documents/semester6/MC/Sessional/Lets_learn/app/src/main/res/drawable-v24/color_detail.xml" value="0.156" />
+        <entry key="..\:/Users/Ameena/Documents/semester6/MC/Sessional/Lets_learn/app/src/main/res/drawable-v24/color_item.xml" value="0.156" />
+        <entry key="..\:/Users/Ameena/Documents/semester6/MC/Sessional/Lets_learn/app/src/main/res/drawable-v24/days_detail.xml" value="0.156" />
+        <entry key="..\:/Users/Ameena/Documents/semester6/MC/Sessional/Lets_learn/app/src/main/res/drawable-v24/days_item.xml" value="0.156" />
+        <entry key="..\:/Users/Ameena/Documents/semester6/MC/Sessional/Lets_learn/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.156" />
+        <entry key="..\:/Users/Ameena/Documents/semester6/MC/Sessional/Lets_learn/app/src/main/res/drawable-v24/number_detail.xml" value="0.156" />
+        <entry key="..\:/Users/Ameena/Documents/semester6/MC/Sessional/Lets_learn/app/src/main/res/drawable-v24/number_item.xml" value="0.156" />
+        <entry key="..\:/Users/Ameena/Documents/semester6/MC/Sessional/Lets_learn/app/src/main/res/drawable-v24/shape_detail.xml" value="0.156" />
+        <entry key="..\:/Users/Ameena/Documents/semester6/MC/Sessional/Lets_learn/app/src/main/res/drawable-v24/shape_item.xml" value="0.156" />
+        <entry key="..\:/Users/Ameena/Documents/semester6/MC/Sessional/Lets_learn/app/src/main/res/drawable-v24/swap.xml" value="0.156" />
+        <entry key="..\:/Users/Ameena/Documents/semester6/MC/Sessional/Lets_learn/app/src/main/res/layout/activity_aphabets.xml" value="0.22327898550724637" />
+        <entry key="..\:/Users/Ameena/Documents/semester6/MC/Sessional/Lets_learn/app/src/main/res/layout/activity_color.xml" value="0.22327898550724637" />
+        <entry key="..\:/Users/Ameena/Documents/semester6/MC/Sessional/Lets_learn/app/src/main/res/layout/activity_cutomized_color_list.xml" value="0.22327898550724637" />
+        <entry key="..\:/Users/Ameena/Documents/semester6/MC/Sessional/Lets_learn/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/Ameena/Documents/semester6/MC/Sessional/Lets_learn/app/src/main/res/layout/activity_main_page_list.xml" value="0.22327898550724637" />
+        <entry key="..\:/Users/Ameena/Documents/semester6/MC/Sessional/Lets_learn/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.156" />
+        <entry key="..\:/Users/Ameena/Documents/semester6/MC/Sessional/Lets_learn/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.156" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

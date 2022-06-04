@@ -39,7 +39,18 @@ public class Color extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                t.setText((CharSequence) ColorList.get(i));
+                if(i==0)
+                    t.setText("RED");
+                else if(i==1)
+                    t.setText("BLUE");
+                else if(i==2)
+                    t.setText("BLACK");
+                else if(i==3)
+                    t.setText("BROWN");
+                else if(i==4)
+                    t.setText("GREEN");
+                else if(i==5)
+                    t.setText("WHITE");
             }
         });
 

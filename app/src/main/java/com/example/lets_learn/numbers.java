@@ -47,11 +47,11 @@ public class numbers extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 if(i==0)
-                    t.setText("Diamond");
+                    t.setText("1");
                 else if(i==1)
-                    t.setText("Circle");
+                    t.setText("2");
                 else if(i==2)
-                    t.setText("Oval");
+                    t.setText("3");
                 else if(i==3)
                     t.setText("Rectangle");
                 else if(i==4)

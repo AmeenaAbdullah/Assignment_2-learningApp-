@@ -42,7 +42,7 @@ public class numbers extends AppCompatActivity {
 
 
         listView.setAdapter(adapter);
-        TextView t=findViewById(R.id.shape_number);
+        TextView t=findViewById(R.id.number_name);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {

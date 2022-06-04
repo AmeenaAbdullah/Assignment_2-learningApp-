@@ -27,8 +27,8 @@ public class Adapter_color extends ArrayAdapter<colorList>{
         convertView = LayoutInflater.from(getContext()).inflate(R.layout.activity_cutomized_color_list ,parent, false);
         ImageView i=convertView.findViewById(R.id.colorimg);
         TextView t=convertView.findViewById(R.id.ColorName);
-
-        i.setImageResource(s.Color);
+        t.setTextColor(s.textcolor);
+        i.setBackgroundColor(s.Color);
         t.setText(s.ColorName);
         return convertView;
     }

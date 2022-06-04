@@ -21,8 +21,6 @@ public class numbers extends AppCompatActivity {
         ArrayList<NumberList> AlphabetList = new ArrayList<NumberList>();
 
 
-        Adapter_Numbers adapter = new Adapter_Numbers(this, AlphabetList);
-
 
         AlphabetList.add(new NumberList("1",R.drawable.circle,"One"));
 
@@ -37,12 +35,10 @@ public class numbers extends AppCompatActivity {
         AlphabetList.add(new NumberList("8",R.drawable.eight,"Eight"));
 
         AlphabetList.add(new NumberList("9",R.drawable.nine,"Nine"));
-        AlphabetList.add(new NumberList("10",R.drawable.jj,"Ten"));
-
-
-
+        AlphabetList.add(new NumberList("10",R.drawable.ten,"Ten"));
 
         Adapter_Numbers adapter = new Adapter_Numbers(this, AlphabetList);
+
 
 
         listView.setAdapter(adapter);

@@ -11,20 +11,26 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Adapter_alphabet  extends ArrayAdapter<alphabtelist> {
 
-    public Adapter_alphabet(@NonNull Context context, int resource, @NonNull List<alphabtelist> objects) {
-        super(context, resource, objects);
+    public Adapter_alphabet(@NonNull Context context, ArrayList<alphabtelist> List) {
+        super(context, 0, List);
     }
 
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
-        alphabtelist s= getItem(position);
-        convertView = LayoutInflater.from(getContext()).inflate(R.layout.activity_cutomized_color_list ,parent, false);
-
+        alphabtelist a= getItem(position);
+        convertView = LayoutInflater.from(getContext()).inflate(R.layout.activity_customized_alphabet ,parent, false);
+        ImageView i=convertView.findViewById(R.id.img);
+        i.setImageResource(a.img);
+        TextView t=convertView.findViewById(R.id.Alphabet);
+        t.setText(a.Name);
+        TextView t1=convertView.findViewById(R.id.wordA);
+        t1.setText(a.word);
         return convertView;
     }
 }

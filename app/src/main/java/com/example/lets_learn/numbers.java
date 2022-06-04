@@ -60,6 +60,8 @@ public class numbers extends AppCompatActivity {
                     t.setText("Star");
                 else if(i==6)
                     t.setText("Square");
+                else if(i==6)
+                    t.setText("Square");
             }
         });
 

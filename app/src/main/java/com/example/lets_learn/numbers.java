@@ -64,6 +64,8 @@ public class numbers extends AppCompatActivity {
                     t.setText("8");
                 else if(i==8)
                     t.setText("9");
+                else if(i==8)
+                    t.setText("9");
             }
         });
 

@@ -42,7 +42,7 @@ public class shapes extends AppCompatActivity {
                 else if(i==3)
                     t.setText("Rectangle");
                 else if(i==4)
-                    t.setText("GREEN");
+                    t.setText("Hexagon");
                 else if(i==5)
                     t.setText("WHITE");
             }

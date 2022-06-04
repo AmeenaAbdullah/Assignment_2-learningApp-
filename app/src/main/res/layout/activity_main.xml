@@ -4,45 +4,67 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/category_bg"
+    android:background="@drawable/home_bg"
     tools:context=".MainActivity">
 
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="291dp"
-        android:layout_height="127dp"
-        app:srcCompat="@drawable/top_card"
-        tools:layout_editor_absoluteX="19dp"
-        tools:layout_editor_absoluteY="181dp" />
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="316dp"
+                android:layout_height="153dp"
+                android:layout_marginTop="80dp"
+                app:srcCompat="@drawable/top_card"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="157dp"
+                android:layout_height="53dp"
+                android:layout_marginStart="64dp"
+                android:fontFamily="@font/alatsi"
+                android:text="Context"
+                android:textAlignment="center"
+                android:textSize="34sp" />
+        </TableRow>
+    </TableLayout>
 
     <ScrollView
-        android:layout_width="302dp"
-        android:layout_height="234dp"
+        android:id="@+id/scrollView2"
+        android:layout_width="251dp"
+        android:layout_height="216dp"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.86">
+        app:layout_constraintTop_toBottomOf="@+id/imageView4">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="0dp"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:textAlignment="center">
 
 
             <Button
                 android:id="@+id/color"
-                android:layout_width="match_parent"
+                android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="19dp"
-                android:background="@drawable/alphabet_detail"
+                android:background="@drawable/color_item"
                 android:gravity="center"
                 android:text="COLORS"
                 android:textAlignment="center"
                 android:textColor="#fff"
-                android:textSize="40sp"
+                android:textSize="24sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -50,15 +72,15 @@
 
             <Button
                 android:id="@+id/alpahbet"
-                android:layout_width="match_parent"
+                android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="19dp"
-                android:background="@drawable/alphabet_detail"
+                android:background="@drawable/alphabet_item"
                 android:gravity="center"
                 android:text="ALPHABETS"
                 android:textAlignment="center"
                 android:textColor="#fff"
-                android:textSize="40sp"
+                android:textSize="24sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -66,15 +88,15 @@
 
             <Button
                 android:id="@+id/shape"
-                android:layout_width="match_parent"
+                android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="19dp"
-                android:background="@drawable/alphabet_detail"
+                android:background="@drawable/shape_item"
                 android:gravity="center"
                 android:text="SHAPES"
                 android:textAlignment="center"
                 android:textColor="#fff"
-                android:textSize="40sp"
+                android:textSize="24sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -82,15 +104,15 @@
 
             <Button
                 android:id="@+id/week"
-                android:layout_width="match_parent"
+                android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="19dp"
-                android:background="@drawable/alphabet_detail"
+                android:background="@drawable/number_item"
                 android:gravity="center"
-                android:text="WEEKS"
+                android:text="Number"
                 android:textAlignment="center"
                 android:textColor="#fff"
-                android:textSize="40sp"
+                android:textSize="24sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -104,9 +126,12 @@
         android:id="@+id/textView3"
         android:layout_width="164dp"
         android:layout_height="102dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="56dp"
+
+        android:fontFamily="monospace"
         android:text="Start Learning"
+        android:textColor="#682020"
         android:textSize="34sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

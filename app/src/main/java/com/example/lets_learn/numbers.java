@@ -59,7 +59,7 @@ public class numbers extends AppCompatActivity {
                 else if(i==5)
                     t.setText("6");
                 else if(i==6)
-                    t.setText("Square");
+                    t.setText("7");
                 else if(i==7)
                     t.setText("Square");
             }

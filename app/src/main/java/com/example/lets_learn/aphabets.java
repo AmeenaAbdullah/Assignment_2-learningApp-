@@ -84,177 +84,41 @@ public class aphabets extends AppCompatActivity {
                 else if(i==8)
                     send.putExtra("alphabet","i");
                 else if(i==9)
-                    t.setText("J");
+                    send.putExtra("alphabet","j");
                 else if(i==10)
-                    t.setText("K");
+                    send.putExtra("alphabet","k");
                 else if(i==11)
-                    t.setText("L");
+                    send.putExtra("alphabet","l");
                 else if(i==12)
-                    t.setText("N");
+                    send.putExtra("alphabet","m");
                 else if(i==13)
-                    t.setText("O");
+                    send.putExtra("alphabet","n");
                 else if(i==14)
-                    t.setText("P");
+                    send.putExtra("alphabet","o");
                 else if(i==15)
-                    t.setText("Q");
+                    send.putExtra("alphabet","p");
                 else if(i==16)
-                    t.setText("R");
+                    send.putExtra("alphabet","q");
                 else if(i==17)
-                    t.setText("S");
+                    send.putExtra("alphabet","r");
                 else if(i==18)
-                    t.setText("T");
+                    send.putExtra("alphabet","s");
                 else if(i==19)
-                    t.setText("U");
+                    send.putExtra("alphabet","t");
                 else if(i==20)
-                    t.setText("V");
+                    send.putExtra("alphabet","u");
                 else if(i==21)
-                    t.setText("W");
+                    send.putExtra("alphabet","v");
                 else if(i==22)
-                    t.setText("X");
+                    send.putExtra("alphabet","w");
                 else if(i==23)
-                    t.setText("y");
+                    send.putExtra("alphabet","x");
                 else if(i==24)
-                    t.setText("Z");
+                    send.putExtra("alphabet","y");
+             startActivity(send);
             }
         });
 
-        public void clicked(View v) {
-            Intent send = new Intent(aphabets.this, Alphabets.class);
-            switch(v.getId())
-            {
-                case R.id.a:{
-                    send.putExtra("alphabet","a");
-                    startActivity(send);
-                    break;
-                }
-                case R.id.b:{
 
-                    startActivity(send);
-                    break;
-                }
-                case R.id.c:{
-                    send.putExtra("alphabet","c");
-                    startActivity(send);
-                    break;
-                }
-                case R.id.d:{
-
-                    startActivity(send);
-                    break;
-                }
-                case R.id.e:{
-                    send.putExtra("alphabet","e");
-                    startActivity(send);
-                    break;
-                }
-                case R.id.f:{
-                    send.putExtra("alphabet","f");
-                    startActivity(send);
-                    break;
-                }
-                case R.id.g:{
-                    send.putExtra("alphabet","g");
-                    startActivity(send);
-                    break;
-                }
-                case R.id.h:{
-                    send.putExtra("alphabet","h");
-                    startActivity(send);
-                    break;
-                }
-                case R.id.i:{
-                    send.putExtra("alphabet","i");
-                    startActivity(send);
-                    break;
-                }
-                case R.id.j:{
-                    send.putExtra("alphabet","j");
-                    startActivity(send);
-                    break;
-                }
-                case R.id.k:{
-                    send.putExtra("alphabet","k");
-                    startActivity(send);
-                    break;
-                }
-                case R.id.l:{
-                    send.putExtra("alphabet","l");
-                    startActivity(send);
-                    break;
-                }
-                case R.id.m:{
-                    send.putExtra("alphabet","m");
-                    startActivity(send);
-                    break;
-                }
-                case R.id.n:{
-                    send.putExtra("alphabet","n");
-                    startActivity(send);
-                    break;
-                }
-                case R.id.o:{
-                    send.putExtra("alphabet","o");
-                    startActivity(send);
-                    break;
-                }
-                case R.id.p:{
-                    send.putExtra("alphabet","p");
-                    startActivity(send);
-                    break;
-                }case R.id.q:{
-                send.putExtra("alphabet","q");
-                startActivity(send);
-                break;
-            }
-                case R.id.r:{
-                    send.putExtra("alphabet","r");
-                    startActivity(send);
-                    break;
-                }
-                case R.id.s:{
-                    send.putExtra("alphabet","s");
-                    startActivity(send);
-                    break;
-                }
-                case R.id.t:{
-                    send.putExtra("alphabet","t");
-                    startActivity(send);
-                    break;
-                }
-                case R.id.u:{
-                    send.putExtra("alphabet","u");
-                    startActivity(send);
-                    break;
-                }
-                case R.id.v:{
-                    send.putExtra("alphabet","v");
-                    startActivity(send);
-                    break;
-                }
-                case R.id.w:{
-                    send.putExtra("alphabet","w");
-                    startActivity(send);
-                    break;
-                }
-                case R.id.x:{
-                    send.putExtra("alphabet","x");
-                    startActivity(send);
-                    break;
-                }
-                case R.id.y:{
-                    send.putExtra("alphabet","y");
-                    startActivity(send);
-                    break;
-                }
-                case R.id.z:{
-                    send.putExtra("alphabet","z");
-                    startActivity(send);
-                    break;
-                }
-
-            }
-
-
-        }
     }
 }

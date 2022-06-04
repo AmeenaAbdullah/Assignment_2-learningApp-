@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Lets_learn">
         <activity
+            android:name=".Customized_Shapes"
+            android:exported="false" />
+        <activity
             android:name=".Alphabets"
             android:exported="false" />
         <activity

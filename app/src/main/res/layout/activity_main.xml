@@ -97,7 +97,7 @@
         android:id="@+id/textView3"
         android:layout_width="164dp"
         android:layout_height="102dp"
-        android:layout_marginStart="48dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="56dp"
 
         android:fontFamily="monospace"
@@ -131,6 +131,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
         app:srcCompat="@drawable/top_card" />
+
+    <Button
+        android:id="@+id/quiz"
+        android:layout_width="182dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="80dp"
+        android:text="Take_Quiz"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -22,11 +22,20 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this,Color.class));
             }
         });
+
+
         Button alphabet=findViewById(R.id.alpahbet);
         alphabet.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this,aphabets.class));
+            }
+        });
+        Button shape=findViewById(R.id.shape);
+        shape.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this,shapes.class));
             }
         });
     }

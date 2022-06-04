@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Lets_learn">
         <activity
+            android:name=".numbers"
+            android:exported="false" />
+        <activity
             android:name=".shapes"
             android:exported="false" />
         <activity

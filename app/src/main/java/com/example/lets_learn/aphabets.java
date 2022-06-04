@@ -115,6 +115,8 @@ public class aphabets extends AppCompatActivity {
                     send.putExtra("alphabet","x");
                 else if(i==24)
                     send.putExtra("alphabet","y");
+                else if(i==25)
+                    send.putExtra("alphabet","z");
              startActivity(send);
             }
         });

@@ -10,22 +10,39 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class shapes extends AppCompatActivity {
+public class numbers extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_shapes);
-        ListView listView=findViewById(R.id.listShape);
-        ArrayList<ShapeList> List = new ArrayList<ShapeList>();
-        List.add(new ShapeList(R.drawable.diamond,"Diamond"));
-        List.add(new ShapeList(R.drawable.circle,"Circle"));
-        List.add(new ShapeList(R.drawable.oval,"Oval"));
-        List.add(new ShapeList(R.drawable.rectangle,"Rectangle"));
-        List.add(new ShapeList(R.drawable.hexagon,"Hexagon"));
-        List.add(new ShapeList(R.drawable.star,"Star"));
-        List.add(new ShapeList(R.drawable.square,"Square"));
-        Adapter_shape adapter = new Adapter_shape(this, List);
+        setContentView(R.layout.activity_numbers);
+        ListView listView=findViewById(R.id.list_number);
+
+        ArrayList<NumberList> AlphabetList = new ArrayList<NumberList>();
+
+
+        Adapter_Numbers adapter = new Adapter_Numbers(this, AlphabetList);
+
+
+        AlphabetList.add(new NumberList("1",R.drawable.circle,"One"));
+
+        AlphabetList.add(new NumberList("2",R.drawable.two2,"Two"));
+
+        AlphabetList.add(new NumberList("3",R.drawable.three,"Three"));
+
+        AlphabetList.add(new NumberList("4",R.drawable.four,"Four"));
+        AlphabetList.add(new NumberList("5",R.drawable.five,"Five"));
+        AlphabetList.add(new NumberList("6",R.drawable.six,"Six"));
+        AlphabetList.add(new NumberList("7",R.drawable.seven,"Seven"));
+        AlphabetList.add(new NumberList("8",R.drawable.eight,"Eight"));
+
+        AlphabetList.add(new NumberList("9",R.drawable.ii,"Nine"));
+        AlphabetList.add(new NumberList("10",R.drawable.jj,"Ten"));
+
+
+
+
+        Adapter_Numbers adapter = new Adapter_Numbers(this, AlphabetList);
 
 
         listView.setAdapter(adapter);

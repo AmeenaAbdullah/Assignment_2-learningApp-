@@ -14,7 +14,8 @@
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/a_b_c_d"
         tools:layout_editor_absoluteX="130dp"
-        tools:layout_editor_absoluteY="16dp" />
+        tools:layout_editor_absoluteY="16dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView2"
@@ -27,5 +28,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+    <ListView
+        android:id="@+id/QuizList"
+        android:layout_width="407dp"
+        android:layout_height="477dp"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="253dp"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

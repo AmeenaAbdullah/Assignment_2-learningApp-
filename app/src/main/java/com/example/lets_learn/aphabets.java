@@ -61,6 +61,8 @@ public class aphabets extends AppCompatActivity {
 
         listView.setAdapter(adapter);
         TextView t=findViewById(R.id.alphabet_number);
+
+
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {

@@ -2,7 +2,7 @@ package com.example.lets_learn;
 
 public class quizList {
 
-
+ public int quesIndex[]={0,1,2,3,4,5,6,7};
    public String myQues[]={"1.What is 3+7 ?" ,
                       "2. A for __________ ?" ,
                       "3. How many days in a week ?",
@@ -28,7 +28,9 @@ public class quizList {
 
 
     };
+public String select[]={
 
+        };
    public String getQues(int a){
        return myQues[a];
    }
@@ -44,5 +46,10 @@ public class quizList {
     public String getCorrectChoice(int a){
        return myAns[a];
     }
-
+    public void Set_selectedChoice(int i,String c){
+      select[i]=c;
+    }
+    public String Get_selectedChoice(int i){
+       return select[i];
+    }
 }

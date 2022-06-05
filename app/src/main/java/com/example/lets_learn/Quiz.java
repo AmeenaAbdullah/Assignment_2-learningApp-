@@ -31,7 +31,7 @@ public class Quiz extends AppCompatActivity {
 
         for(int i=0;i<quess.myQues.length;i++) {
 
-            quizList.add(new QuizObj(quess.getQues(i), quess.getChoice1(i), quess.getChoice2(i), quess.getChoice3(i)));
+            quizList.add(new QuizObj(quess.getQues(i),i, quess.getChoice1(i), quess.getChoice2(i), quess.getChoice3(i)));
         }
        quizlistView.setAdapter(adapter);
 

@@ -41,13 +41,15 @@ public class Adapter_quiz extends ArrayAdapter<QuizObj> {
 
          if(q.quesNo==10){
              //end
-             Button b=convertView.findViewById(R.id.submit_B);
+             View b = convertView.findViewById(R.id.submit_B);
+             b.setVisibility(View.VISIBLE);
              b.setOnClickListener(new View.OnClickListener() {
                  @Override
                  public void onClick(View view) {
 
                  }
              });
+
          }
          else {
              r1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {

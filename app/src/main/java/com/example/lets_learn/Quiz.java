@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.RadioButton;
 
@@ -22,22 +23,22 @@ public class Quiz extends AppCompatActivity {
         setContentView(R.layout.activity_quiz);
         quizList q = new quizList();
 
-        ListView quizlistView=findViewById(R.id.QuizList);
+        ListView quizlistView = findViewById(R.id.QuizList);
 
-        ArrayList<QuizObj> quizList=new ArrayList<>();
+        ArrayList<QuizObj> quizList = new ArrayList<>();
 
-        Adapter_quiz adapter=new Adapter_quiz(this,quizList);
+        Adapter_quiz adapter = new Adapter_quiz(this, quizList);
 
 
-        quizList quess=new quizList();
+        quizList quess = new quizList();
 
-        for(int i=0;i<quess.myQues.length;i++) {
+        for (int i = 0; i < quess.myQues.length; i++) {
 
-            quizList.add(new QuizObj(quess.getQues(i),i, quess.getChoice1(i), quess.getChoice2(i), quess.getChoice3(i)));
+            quizList.add(new QuizObj(quess.getQues(i), i, quess.getChoice1(i), quess.getChoice2(i), quess.getChoice3(i)));
         }
-        quizList.add(new QuizObj("",10,"","",""));
+        quizList.add(new QuizObj("", 10, "", "", ""));
 
-       quizlistView.setAdapter(adapter);
+        quizlistView.setAdapter(adapter);
 
         quizlistView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -48,15 +49,9 @@ public class Quiz extends AppCompatActivity {
         });
 
 
-        Button b=findViewById(R.id.submit);
-        b.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(Quiz.this,score.class));
-            }
-        });
-
-
+    }
+    public void Submit(View view){
+        startActivity(new Intent(Quiz.this,score.class));
     }
 
 }

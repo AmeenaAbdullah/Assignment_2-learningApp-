@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this,Osama.class));
+                startActivity(new Intent(MainActivity.this,Color.class));
             }
         });
 
@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
        quiz.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this,numbers.class));
+                startActivity(new Intent(MainActivity.this,Quiz.class));
             }
         });
     }

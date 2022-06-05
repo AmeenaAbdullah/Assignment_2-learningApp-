@@ -18,6 +18,7 @@ public class Adapter_Numbers extends ArrayAdapter<NumberList> {
         super(context, 0, List);
     }
 
+
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {

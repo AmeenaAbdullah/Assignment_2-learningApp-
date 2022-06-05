@@ -42,13 +42,14 @@ public class Adapter_quiz extends ArrayAdapter<QuizObj> {
          if(q.quesNo==10){
              //end
              View b = convertView.findViewById(R.id.submit_B);
+             View c1 = convertView.findViewById(R.id.choice1);
+             View c2 = convertView.findViewById(R.id.choice2);
+             View c3 = convertView.findViewById(R.id.choice3);
              b.setVisibility(View.VISIBLE);
-             b.setOnClickListener(new View.OnClickListener() {
-                 @Override
-                 public void onClick(View view) {
-
-                 }
-             });
+             c1.setVisibility(View.INVISIBLE);
+             c2.setVisibility(View.INVISIBLE);
+             c3.setVisibility(View.INVISIBLE);
+            
 
          }
          else {

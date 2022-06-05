@@ -71,11 +71,12 @@
         android:layout_height="wrap_content"
         android:text="submit"
         android:textSize="20sp"
+        android:focusable="false"
         android:onClick="Submit"
         android:visibility="invisible"
         tools:layout_editor_absoluteX="65dp"
         tools:layout_editor_absoluteY="56dp"
-        />
+        tools:ignore="MissingConstraints" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

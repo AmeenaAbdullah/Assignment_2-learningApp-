@@ -2,10 +2,12 @@ package com.example.lets_learn;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.RadioButton;
 
@@ -33,6 +35,8 @@ public class Quiz extends AppCompatActivity {
 
             quizList.add(new QuizObj(quess.getQues(i),i, quess.getChoice1(i), quess.getChoice2(i), quess.getChoice3(i)));
         }
+        quizList.add(new QuizObj("",10,"","",""));
+
        quizlistView.setAdapter(adapter);
 
         quizlistView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -40,6 +44,15 @@ public class Quiz extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 
 
+            }
+        });
+
+
+        Button b=findViewById(R.id.submit);
+        b.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(Quiz.this,score.class));
             }
         });
 

@@ -9,7 +9,7 @@ public class quizList {
                       "4. The Colour of banana is ?",
                        "5. Z for _____________? ",
                        "6.How many letters are there in the alphabets ?",
-                       ""
+                       "7.How many minutes in one hour?"
 
    };
     public String choice[][]={
@@ -19,11 +19,12 @@ public class quizList {
             { "Yellow","blue","red"} ,
             { "ink","zip","lion"} ,
             { "32","26","17"} ,
+            {"20","60","65"}
 
 
     };
 
-    public String myAns[]={"10","Apple","7","Yellow","zip","26"
+    public String myAns[]={"10","Apple","7","Yellow","zip","26","60"
 
 
     };

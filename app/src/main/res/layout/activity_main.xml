@@ -134,9 +134,11 @@
 
     <Button
         android:id="@+id/quiz"
-        android:layout_width="182dp"
-        android:layout_height="60dp"
+        android:layout_width="141dp"
+        android:layout_height="61dp"
         android:layout_marginTop="80dp"
+        android:background="@drawable/number_item"
+
         android:text="Take_Quiz"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"

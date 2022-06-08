@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -20,10 +21,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Adapter_quiz extends ArrayAdapter<QuizObj> {
+    int selectedPosition = 0;
     public Adapter_quiz(@NonNull Context context, @NonNull List<QuizObj> objects) {
 
         super(context, 0,objects);
     }
+
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
@@ -34,6 +37,9 @@ public class Adapter_quiz extends ArrayAdapter<QuizObj> {
 
         TextView t=convertView.findViewById(R.id.ques);
         t.setText(q.ques);
+
+        TextView tno=convertView.findViewById(R.id.num);
+        tno.setText(String.valueOf(q.quesNo));
 
         RadioButton r1=convertView.findViewById(R.id.choice1);
         RadioButton r2=convertView.findViewById(R.id.choice2);
@@ -49,36 +55,14 @@ public class Adapter_quiz extends ArrayAdapter<QuizObj> {
              c1.setVisibility(View.INVISIBLE);
              c2.setVisibility(View.INVISIBLE);
              c3.setVisibility(View.INVISIBLE);
-            
+
 
          }
          else {
-             r1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-                 @Override
-                 public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                     if (isChecked) {
-                         quiz.Set_selectedChoice(q.getQuesNo(), (String) r1.getText());
-                     }
 
-                 }
-             });
-             r2.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-                 @Override
-                 public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                     if (isChecked) {
-                         quiz.Set_selectedChoice(q.getQuesNo(), (String) r2.getText());
-                     }
-                 }
-             });
-             r3.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-                 @Override
-                 public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                     if (isChecked) {
-                         quiz.Set_selectedChoice(q.getQuesNo(), (String) r3.getText());
-                     }
 
-                 }
-             });
+
+
              r1.setText(q.choice1);
              r2.setText(q.choice2);
              r3.setText(q.choice3);

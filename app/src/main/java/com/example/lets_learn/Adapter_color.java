@@ -29,6 +29,7 @@ public class Adapter_color extends ArrayAdapter<colorList>{
         t.setTextColor(s.textcolor);
         convertView.setBackgroundColor(s.Color);
         t.setText(s.ColorName);
+
         return convertView;
 
     }
